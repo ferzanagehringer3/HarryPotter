@@ -4,7 +4,7 @@
   </script>
   
   <div class="ingredients-page">
-    <!-- Partikel -->
+
     <div class="particles">
       {#each Array(30).fill(0) as _, i}
         <div
@@ -14,13 +14,13 @@
       {/each}
     </div>
   
-    <!-- Überschrift -->
+
     <header>
       <h1 class="page-title">Your Ingredients</h1>
       <a href="/ingredients/new" class="btn-create">Add Ingredient</a>
     </header>
   
-    <!-- Ingredients-Liste -->
+
     <div class="ingredients-list">
       {#each data.ingredients as ingredient}
         <IngredientCard {ingredient} />
@@ -30,7 +30,7 @@
   
   <style>
     .ingredients-page {
-      position: relative; /* Für Partikel */
+      position: relative; 
       padding: 2rem;
       background-color: #1e1e2f;
       color: #f8f9fa;
@@ -38,7 +38,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      overflow: hidden; /* Verhindert Überlauf der Partikel */
+      overflow: hidden;
     }
   
 
@@ -58,10 +58,10 @@
       gap: 2rem;
       width: 100%;
       max-width: 1200px;
-      z-index: 1; /* Über Partikeln */
+      z-index: 1;
     }
   
-    /* Partikel */
+ 
     .particles {
       position: absolute;
       top: 0;

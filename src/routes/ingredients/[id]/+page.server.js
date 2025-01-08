@@ -8,7 +8,7 @@ export async function load({ params }) {
     throw error(404, `Ingredient with ID ${params.id} not found`);
   }
 
-  // Lade die Potions basierend auf den IDs in "used_in"
+
   const usedInPotions = await db.getPotionsByIds(ingredient.used_in);
 
   return { ingredient, usedInPotions };

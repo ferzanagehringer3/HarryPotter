@@ -21,7 +21,7 @@ export const actions = {
     const id = await db.createPotion(potion);
 
     if (id) {
-      return { success: true, id }; // Erfolgreiche Erstellung
+      return { success: true, id }; 
     } else {
       return { error: "Failed to create potion" };
     }
