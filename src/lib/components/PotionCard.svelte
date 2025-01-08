@@ -14,8 +14,8 @@
 
 <style>
   .potion-card {
-    background-color: #1e272e; /* Dunkler Hintergrund für bessere Lesbarkeit */
-    color: #ecf0f1; /* Helle Schriftfarbe */
+    background-color: #1e272e; 
+    color: #ecf0f1; 
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -46,20 +46,20 @@
   .potion-name {
     font-size: 1.5rem;
     font-weight: bold;
-    color: silver; /* Gold für den Namen */
+    color: silver;
     margin-bottom: 0.5rem;
   }
 
-  /* Dauer-Schriftfarbe */
+
   .potion-duration {
-    color: #40826D; /* Grün für Dauer */
+    color: #40826D;
     font-weight: bold;
     margin: 0.5rem 0;
   }
 
-  /* Herkunft-Schriftfarbe */
+
   .potion-origin {
-    color: #40826D; /* Rot für Herkunft */
+    color: #40826D; 
     font-weight: bold;
     margin: 0.5rem 0;
   }
