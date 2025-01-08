@@ -41,13 +41,7 @@
       overflow: hidden; /* Verhindert Überlauf der Partikel */
     }
   
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 2rem;
-      z-index: 1; /* Über Partikeln */
-    }
+
   
     .page-title {
       font-size: 2.5rem;
@@ -57,23 +51,7 @@
       margin-bottom: 1rem;
     }
   
-    .btn-create {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background-color: #6c5ce7;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-align: center;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-  
-    .btn-create:hover {
-      background-color: #4834d4;
-    }
-  
+    
     .ingredients-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

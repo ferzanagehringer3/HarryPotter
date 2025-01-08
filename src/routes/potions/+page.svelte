@@ -85,11 +85,6 @@
     }
   }
 
-  header {
-    margin-bottom: 2rem;
-    z-index: 1;
-  }
-
   .title {
     font-size: 3rem;
     font-weight: bold;
@@ -98,22 +93,7 @@
     animation: fadeInDown 2s ease;
   }
 
-  .btn-create {
-    padding: 1rem 2rem;
-    background-color: #6c5ce7;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    animation: fadeInUp 2s ease;
-  }
-
-  .btn-create:hover {
-    background-color: #4834d4;
-  }
+  
 
   .potions-list {
     display: grid;

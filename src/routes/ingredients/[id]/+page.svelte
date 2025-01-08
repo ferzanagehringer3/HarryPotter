@@ -7,7 +7,7 @@
 <!-- Back Button -->
 <a href="/ingredients" class="btn btn-back">Back to Ingredients</a>
 
-<h1 class="ingredient-title">{ingredient.name}</h1>
+<h1 class="detail-title">{ingredient.name}</h1>
 
 <div class="details-section">
   <div class="left-section">
@@ -39,45 +39,6 @@
 </div>
 
 <style>
-  /* General Styling */
-
-  .btn-back {
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn-back:hover {
-    background-color: #2980b9;
-  }
-
-  /* Glowing Title */
-  .ingredient-title {
-    font-size: 2.5rem;
-    color: #ffd700; /* Golden color */
-    text-align: center;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
-  }
-
-  .details-section {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-
-  .left-section {
-    flex: 1;
-  }
 
   .ingredient-img {
     width: 100%;
@@ -92,12 +53,12 @@
 
   .info-title {
     font-weight: bold;
-    color: #6c5ce7; /* Purple for labels */
+    color: #6c5ce7; 
     font-size: 1.2rem;
   }
 
   .info-value {
-    color: #ffffff; /* Bright white for values */
+    color: #ffffff;
     font-style: italic;
     font-size: 1.1rem;
   }
@@ -106,7 +67,7 @@
     margin-top: 2rem;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #3498db; /* Blue for section title */
+    color: #3498db;
   }
 
   .used-in-list {
@@ -115,7 +76,6 @@
     margin: 1.5rem 0;
   }
 
-  /* Decorative Symbol for List */
   .used-in-item {
     margin-bottom: 1rem;
     position: relative;
@@ -130,53 +90,18 @@
     position: absolute;
     left: 0;
     font-size: 1.5rem;
-    color: #ffd700; /* Gold symbol */
+    color: #ffd700;
   }
 
   .potion-link {
-    color: #ffd700; /* Gold for links */
+    color: #ffd700;
     text-decoration: none;
   }
 
   .potion-link:hover {
-    color: #e67e22; /* Orange on hover */
+    color: #e67e22;
     text-decoration: underline;
   }
 
-  .button-group {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-
-  .btn-edit {
-    background-color: #27ae60; /* Green for update */
-    color: white;
-    border: none;
-  }
-
-  .btn-edit:hover {
-    background-color: #219150;
-    transform: scale(1.05);
-  }
-
-  .btn-delete {
-    background-color: #c0392b; /* Softer red for delete */
-    color: white;
-    border: none;
-  }
-
-  .btn-delete:hover {
-    background-color: #a93226;
-    transform: scale(1.05);
-  }
+  
 </style>
