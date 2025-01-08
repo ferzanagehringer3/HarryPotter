@@ -1,10 +1,10 @@
 <script>
-  let backgroundImage = "/images/magic-scroll.png"; // Hintergrundbild
-  let centralGif = "/images/sparkle.gif"; // Grosses GIF
+  let backgroundImage = "/images/magic-scroll.png";
+  let centralGif = "/images/sparkle.gif";
 </script>
 
 <div class="about-container">
-  <!-- Funkelnde Sterne -->
+
   <div class="sparkles">
     {#each Array(50).fill(0) as _, i}
       <div
@@ -14,12 +14,12 @@
     {/each}
   </div>
 
-  <!-- Zentrales GIF -->
+
   <div class="gif-container">
     <img src={centralGif} alt="Potion Animation" class="potion-gif" />
   </div>
 
-  <!-- Text-Overlay -->
+
   <div class="text-overlay">
     <h1 class="title">About the ZHAW Witch</h1>
     <p class="description">
@@ -35,7 +35,7 @@
 </div>
 
 <style>
-  /* Gesamtcontainer */
+
   .about-container {
     position: relative;
     width: 100%;
@@ -49,7 +49,7 @@
     overflow: hidden;
   }
 
-  /* Funkelnde Sterne */
+
   .sparkles {
     position: absolute;
     top: 0;
@@ -87,11 +87,10 @@
   }
 
   .sparkle:nth-child(odd) {
-    background-color: #6c5ce7; /* Lila */
+    background-color: #6c5ce7;
     box-shadow: 0 0 5px #6c5ce7, 0 0 10px #6c5ce7;
   }
 
-  /* Animation für Funkeln */
   @keyframes sparkle {
     0% {
       opacity: 0;
@@ -107,7 +106,6 @@
     }
   }
 
-  /* Zentrales GIF */
   .gif-container {
     position: relative;
     z-index: 2;
@@ -120,7 +118,6 @@
     animation: pulse 3s infinite;
   }
 
-  /* Text-Overlay */
   .text-overlay {
     position: relative;
     text-align: center;
@@ -147,7 +144,6 @@
     text-shadow: 0 0 10px #000;
   }
 
-  /* Animation für das GIF */
   @keyframes pulse {
     0% {
       transform: scale(1);
