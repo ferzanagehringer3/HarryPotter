@@ -1,6 +1,3 @@
-<script>
-    // Keine zusätzliche Logik erforderlich
-  </script>
   
   <div class="homepage">
     <!-- Schwebende Partikel -->

@@ -1,7 +1,4 @@
-<script>
-    // No data or logic needed; this is a static form
-  </script>
-  
+
   <h1>Add a New Ingredient</h1>
   
   <form method="POST" action="?/create">
@@ -14,15 +11,10 @@
       <label for="origin">Origin</label>
       <input type="text" id="origin" name="origin" required />
     </div>
-  
+
     <div>
       <label for="rarity">Rarity</label>
-      <select id="rarity" name="rarity" required>
-        <option value="Common">Common</option>
-        <option value="Uncommon">Uncommon</option>
-        <option value="Rare">Rare</option>
-        <option value="Legendary">Legendary</option>
-      </select>
+      <input type="text" id="rarity" name="rarity" required />
     </div>
   
     <button type="submit" class="btn btn-success">Create Ingredient</button>
@@ -51,7 +43,6 @@
     }
   
     input,
-    select,
     button {
       width: 100%;
       padding: 0.5rem;
@@ -72,10 +63,5 @@
       background-color: #218838;
     }
   
-    body {
-      background-color: #1e1e2f;
-      color: white;
-      min-height: 100vh;
-    }
   </style>
   

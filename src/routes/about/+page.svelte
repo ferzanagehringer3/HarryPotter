@@ -1,6 +1,6 @@
 <script>
   let backgroundImage = "/images/magic-scroll.png"; // Hintergrundbild
-  let centralGif = "/images/sparkle.gif"; // Großes GIF
+  let centralGif = "/images/sparkle.gif"; // Grosses GIF
 </script>
 
 <div class="about-container">

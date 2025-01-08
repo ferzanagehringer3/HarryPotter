@@ -7,10 +7,10 @@ await client.connect();
 const db = client.db("HarryPotterDB"); // select database
 
 //////////////////////////////////////////
-// Movies
+// Potions
 //////////////////////////////////////////
 
-// Get all movies
+// Get all potions
 async function getPotions() {
   let potions = [];
   try {
@@ -32,7 +32,7 @@ async function getPotions() {
   return potions;
 }
 
-// Get movie by id
+// Get potion by id
 async function getPotion(id) {
   try {
     const collection = db.collection("potions");
@@ -61,19 +61,7 @@ async function getPotion(id) {
 
 
 
-
-
-
-
-// create movie
-// Example movie object:
-/* 
-{ 
-  title: "Das Geheimnis von Altura",
-  year: 2024,
-  length: "120 Minuten"
-} 
-*/
+// create potion
 async function createPotion(potion) {
   potion.poster = "/images/placeholder.jpg"; // default poster
   potion.ingrediants = [];
@@ -89,24 +77,9 @@ async function createPotion(potion) {
   return null;
 }
 
-// update movie
-// Example movie object:
-/* 
-{ 
-  _id: "6630e72c95e12055f661ff13",
-  title: "Das Geheimnis von Altura",
-  year: 2024,
-  length: "120 Minuten",
-  actors: [
-    "Lena Herzog",
-    "Maximilian Schröder",
-    "Sophia Neumann"
-  ],
-  poster: "/images/Altura.png",
-  watchlist: false
-} 
-*/
-// returns: id of the updated movie or null, if movie could not be updated
+
+
+// update potion
 async function updatePotion(potion) {
   try {
     let id = potion._id;
@@ -129,8 +102,7 @@ async function updatePotion(potion) {
   return null;
 }
 
-// delete movie by id
-// returns: id of the deleted movie or null, if movie could not be deleted
+// delete potion by id
 async function deletePotion(id) {
   try {
     const collection = db.collection("potions");
@@ -150,7 +122,7 @@ async function deletePotion(id) {
   return null;
 }
 
-// Get instructions by potion name
+// Get instructions by potion
 async function getInstructions(id) {
   try {
     const collection = db.collection("instructions");
@@ -281,11 +253,6 @@ async function getPotionsByIds(ids) {
     return [];
   }
 }
-
-
-
-
-
 
 
 

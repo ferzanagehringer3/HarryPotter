@@ -3,7 +3,7 @@
     let ingredient = data.ingredient;
   </script>
   
-  <h1>Ingredient bearbeiten</h1>
+  <h1>Update Ingredient</h1>
   
   <form method="POST" action="?/update">
     <input type="hidden" name="id" value={ingredient._id} />
@@ -14,13 +14,13 @@
     </div>
   
     <div>
-      <label for="origin">Herkunft</label>
+      <label for="origin">Origin</label>
       <input type="text" id="origin" name="origin" value={ingredient.origin} required />
     </div>
   
     <div>
-      <label for="properties">Eigenschaften</label>
-      <textarea id="properties" name="properties" required>{ingredient.properties}</textarea>
+      <label for="properties">Rarity</label>
+      <textarea id="properties" name="properties" required>{ingredient.rarity}</textarea>
     </div>
   
     <button type="submit" class="btn btn-primary">Ingredient aktualisieren</button>

@@ -7,7 +7,7 @@ export const actions = {
     const newIngredient = {
       name: formData.get("name"),
       origin: formData.get("origin"),
-      properties: formData.get("properties"),
+      rarity: formData.get("rarity"),
     };
 
     const id = await db.createIngredient(newIngredient);
